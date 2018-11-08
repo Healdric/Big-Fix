@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <script>
+
+function subYearFunction() {
+    var year = new Date().getFullYear();
+    var subYear = document.getElementById("yearSub").value;
+
+     if(subYear > year){
+
+       document.getElementById("demo").innerHTML = "Too new, try again"; 
+     }
+    }
+</script>  
+       
+
+        
+ <script>    
+     
+   function sale1PropType(){ 
+        var typeSale1 = document.getElementById("typeSale1").value;
+        var typeSub = document.getElementById("typeSub").value;
+       
+        if (typeSale1==typeSub){
+          document.getElementById("propertyTypeSale1").style.color = "green";
+        } else {
+	document.getElementById("propertyTypeSale1").style.color = "red";
+	  } 
+       }
+      
+    </script>
+        
+     <script>    
+     
+   function sale1Ext(){ 
+        var extSale1 = document.getElementById("extSale1").value;
+        var extSub = document.getElementById("extSub").value;
+       
+        if (extSale1==extSub){
+          document.getElementById("exteriorSale1").style.color = "green";
+        } else {
+	document.getElementById("exteriorSale1").style.color = "red";
+	  } 
+       }
+      
+    </script>
+        
+    <script>
+     
+          function sale1PricePerSqft()
+   {
+        document.getElementById('sale1PricePerSqft').value = "$" +
+        (document.getElementById('sale1Price').value / 
+        document.getElementById('sqftSale1').value).toFixed(2);
+
+   }
+        
+</script>
+    
+     <script>    
+    
+   function sale1Acreage(){ 
+        var s1LotSz = document.getElementById("sale1LotSz").value;
+        var subLotSz = document.getElementById("subLotSz").value;
+      
+        if (s1LotSz<(subLotSz*0.5) || s1LotSz>(subLotSz*1.5)){
+          document.getElementById("sale1LotSize").style.color = "red";
+        } else {
+	document.getElementById("sale1LotSize").style.color = "green";
+	  } 
+   }
+      
+    </script>
+     
+        <script>
+
+function saleOneYearFunction() {
+    var year = new Date().getFullYear();
+    var sale1Year = document.getElementById("yearSale1").value;
+
+     if(sale1Year > year){
+
+       document.getElementById("demo1").innerHTML = "Too new, try again"; 
+     }
+    }
+</script>
+    
+     <script>
+function sale1Basement() {
+    var s1Basement = document.getElementById("s1Basement");
+    var subBasement = document.getElementById("SubjectBasement");
+    
+    if ((s1Basement.checked == true && subBasement.checked==true) || (s1Basement.checked == false && subBasement.checked==false)){
+        document.getElementById("sale1Basement").style.color = "green";
+    } else {
+       document.getElementById("sale1Basement").style.color = "red";
+    }
+}
+</script>
+    
+     <script>
+    function s1Pool() {
+        var sale1Pool = document.getElementById("sale1Pool");
+        var subPool = document.getElementById("subPool");
+    
+    if ((sale1Pool.checked == true && subPool.checked==true) || (sale1Pool.checked == false && subPool.checked==false)){
+        document.getElementById("poolSale1").style.color = "green";
+    } else {
+       document.getElementById("poolSale1").style.color = "red";
+    }
+}
+</script>
+        
+     <script>
+    function s1Wfront() {
+        var sale1Wfront = document.getElementById("sale1Waterfront");
+        var subWfront = document.getElementById("subWaterfront");
+    
+    if ((sale1Wfront.checked == true && subWfront.checked==true) || (sale1Wfront.checked == false && subWfront.checked==false)){
+        document.getElementById("s1wf").style.color = "green";
+    } else {
+       document.getElementById("s1wf").style.color = "red";
+    }
+}
+</script>
+        
+      <script>
+    function s1Wview() {
+        var sale1Wview = document.getElementById("sale1Waterview");
+        var subWview = document.getElementById("subWaterview");
+    
+    if ((sale1Wview.checked == true && subWview.checked==true) || (sale1Wview.checked == false && subWview.checked==false)){
+        document.getElementById("s1wv").style.color = "green";
+    } else {
+       document.getElementById("s1wv").style.color = "red";
+    }
+}
+</script>
+        
+     <script>
+    function s1Gcourse() {
+        var s1GolfCourse = document.getElementById("sale1GolfCourse");
+        var subGcourse = document.getElementById("subGolfCourse");
+    
+    if ((s1GolfCourse.checked == true && subGcourse.checked==true) || (s1GolfCourse.checked == false && subGcourse.checked==false)){
+        document.getElementById("s1gc").style.color = "green";
+    } else {
+       document.getElementById("s1gc").style.color = "red";
+    }
+}
+</script>
+        
+     <script>    
+     
+   function sale2PropType(){ 
+        var typeSale2 = document.getElementById("typeSale2").value;
+        var typeSub = document.getElementById("typeSub").value;
+       
+        if (typeSale2==typeSub){
+          document.getElementById("propertyTypeSale2").style.color = "green";
+        } else {
+	document.getElementById("propertyTypeSale2").style.color = "red";
+	  } 
+       }
+      
+    </script>
+        
+       <script>    
+     
+   function sale2Ext(){ 
+        var extSale2 = document.getElementById("extSale2").value;
+        var extSub = document.getElementById("extSub").value;
+       
+        if (extSale2==extSub){
+          document.getElementById("exteriorSale2").style.color = "green";
+        } else {
+	document.getElementById("exteriorSale2").style.color = "red";
+	  } 
+       }
+      
+    </script>
+        
+      <script>
+     
+          function sale2PricePerSqft()
+   {
+        document.getElementById('sale2PricePerSqft').value = "$" +
+        (document.getElementById('sale2Price').value / 
+        document.getElementById('sqftSale2').value).toFixed(2);
+
+   }
+        
+</script>
+      
+         <script>    
+    
+   function sale2Acreage(){ 
+        var s2LotSz = document.getElementById("sale2LotSz").value;
+        var subLotSz = document.getElementById("subLotSz").value;
+      
+        if (s2LotSz<(subLotSz*0.5) || s2LotSz>(subLotSz*1.5)){
+          document.getElementById("sale2LotSize").style.color = "red";
+        } else {
+	document.getElementById("sale2LotSize").style.color = "green";
+	  } 
+   }
+      
+    </script>
+      
+        <script>
+
+function saleTwoYearFunction() {
+    var year = new Date().getFullYear();
+    var sale2Year = document.getElementById("yearSale2").value;
+
+     if(sale2Year > year){
+
+       document.getElementById("demo2").innerHTML = "Too new, try again"; 
+     } 
+    }
+</script>    
+       
+         <script>
+function sale2Basement() {
+    var s2Basement = document.getElementById("s2Basement");
+    var subBasement = document.getElementById("SubjectBasement");
+    
+    if ((s2Basement.checked == true && subBasement.checked==true) || (s2Basement.checked == false && subBasement.checked==false)){
+        document.getElementById("sale2Basement").style.color = "green";
+    } else {
+       document.getElementById("sale2Basement").style.color = "red";
+    }
+}
+</script>
+      
+         <script>
+    function s2Pool() {
+        var sale2Pool = document.getElementById("sale2Pool");
+        var subPool = document.getElementById("subPool");
+    
+    if ((sale2Pool.checked == true && subPool.checked==true) || (sale2Pool.checked == false && subPool.checked==false)){
+        document.getElementById("poolSale2").style.color = "green";
+    } else {
+       document.getElementById("poolSale2").style.color = "red";
+    }
+}
+</script>
+    
+         <script>    
+     
+   function sale3PropType(){ 
+        var typeSale3 = document.getElementById("typeSale3").value;
+        var typeSub = document.getElementById("typeSub").value;
+       
+        if (typeSale3==typeSub){
+          document.getElementById("propertyTypeSale3").style.color = "green";
+        } else {
+	document.getElementById("propertyTypeSale3").style.color = "red";
+	  } 
+       }
+      
+    </script>
+       
+         <script>    
+     
+   function sale3Ext(){ 
+        var extSale3 = document.getElementById("extSale3").value;
+        var extSub = document.getElementById("extSub").value;
+       
+        if (extSale3==extSub){
+          document.getElementById("exteriorSale3").style.color = "green";
+        } else {
+	document.getElementById("exteriorSale3").style.color = "red";
+	  } 
+       }
+      
+    </script>
+        
+        <script>
+     
+          function PricePerSqft()
+   {
+        document.getElementById('sale3PricePerSqft').value = "$" +
+        (document.getElementById('sale3Price').value / 
+        document.getElementById('sqftSale3').value).toFixed(2);
+
+   }
+        
+</script>
+    
+        <script>    
+    
+   function sale3Acreage(){ 
+        var s3LotSz = document.getElementById("sale3LotSz").value;
+        var subLotSz = document.getElementById("subLotSz").value;
+      
+        if (s3LotSz<(subLotSz*0.5) || s3LotSz>(subLotSz*1.5)){
+          document.getElementById("sale3LotSize").style.color = "red";
+        } else {
+	document.getElementById("sale3LotSize").style.color = "green";
+	  } 
+   }
+      
+    </script>
+     
+        <script>
+
+function saleThreeYearFunction() {
+    var year = new Date().getFullYear();
+    var sale3Year = document.getElementById("yearSale3").value;
+
+     if(sale3Year > year){
+
+       document.getElementById("demo3").innerHTML = "Too new, try again"; 
+     }
+    }
+</script> 
+      
+         <script>
+function sale3Basement() {
+    var s3Basement = document.getElementById("s3Basement");
+    var subBasement = document.getElementById("SubjectBasement");
+    
+    if ((s3Basement.checked == true && subBasement.checked==true) || (s3Basement.checked == false && subBasement.checked==false)){
+        document.getElementById("sale3Basement").style.color = "green";
+    } else {
+       document.getElementById("sale3Basement").style.color = "red";
+    }
+}
+</script>
+      
+         <script>
+    function s3Pool() {
+        var sale3Pool = document.getElementById("sale3Pool");
+        var subPool = document.getElementById("subPool");
+    
+    if ((sale3Pool.checked == true && subPool.checked==true) || (sale3Pool.checked == false && subPool.checked==false)){
+        document.getElementById("poolSale3").style.color = "green";
+    } else {
+       document.getElementById("poolSale3").style.color = "red";
+    }
+}
+</script>
+    
+     <script>
+    function s2Wfront() {
+        var sale2Wfront = document.getElementById("sale2Waterfront");
+        var subWfront = document.getElementById("subWaterfront");
+    
+    if ((sale2Wfront.checked == true && subWfront.checked==true) || (sale2Wfront.checked == false && subWfront.checked==false)){
+        document.getElementById("s2wf").style.color = "green";
+    } else {
+       document.getElementById("s2wf").style.color = "red";
+    }
+}
+</script>
+        
+      <script>
+    function s2Wview() {
+        var sale2Wview = document.getElementById("sale2Waterview");
+        var subWview = document.getElementById("subWaterview");
+    
+    if ((sale2Wview.checked == true && subWview.checked==true) || (sale2Wview.checked == false && subWview.checked==false)){
+        document.getElementById("s2wv").style.color = "green";
+    } else {
+       document.getElementById("s2wv").style.color = "red";
+    }
+}
+</script>
+        
+     <script>
+    function s2Gcourse() {
+        var s2GolfCourse = document.getElementById("sale2GolfCourse");
+        var subGcourse = document.getElementById("subGolfCourse");
+    
+    if ((s2GolfCourse.checked == true && subGcourse.checked==true) || (s2GolfCourse.checked == false && subGcourse.checked==false)){
+        document.getElementById("s2gc").style.color = "green";
+    } else {
+       document.getElementById("s2gc").style.color = "red";
+    }
+}
+</script>
+        
+         <script>
+    function s3Wfront() {
+        var sale3Wfront = document.getElementById("sale3Waterfront");
+        var subWfront = document.getElementById("subWaterfront");
+    
+    if ((sale3Wfront.checked == true && subWfront.checked==true) || (sale3Wfront.checked == false && subWfront.checked==false)){
+        document.getElementById("s3wf").style.color = "green";
+    } else {
+       document.getElementById("s3wf").style.color = "red";
+    }
+}
+</script>
+        
+      <script>
+    function s3Wview() {
+        var sale3Wview = document.getElementById("sale3Waterview");
+        var subWview = document.getElementById("subWaterview");
+    
+    if ((sale3Wview.checked == true && subWview.checked==true) || (sale3Wview.checked == false && subWview.checked==false)){
+        document.getElementById("s3wv").style.color = "green";
+    } else {
+       document.getElementById("s3wv").style.color = "red";
+    }
+}
+</script>
+        
+     <script>
+    function s3Gcourse() {
+        var s3GolfCourse = document.getElementById("sale3GolfCourse");
+        var subGcourse = document.getElementById("subGolfCourse");
+    
+    if ((s3GolfCourse.checked == true && subGcourse.checked==true) || (s3GolfCourse.checked == false && subGcourse.checked==false)){
+        document.getElementById("s3gc").style.color = "green";
+    } else {
+       document.getElementById("s3gc").style.color = "red";
+    }
+}
+</script>
+    <style>
+.center {
+    margin: auto;
+    width: 35%;
+    border: 2px solid #73AD21;
+    padding: 5px;
+}
+     
+.border {
+    border: 2px solid #73AD21;
+    padding: 1px;
+    margin: auto;   
+}
+        
+</style>
+            
+</head>   
+    
+<body> 
+ 
+ <fieldset class="border">
+   
+ <legend>BPO VALUE VALIDATION FORM</legend> <br>
+    <fieldset class="border">
+        <legend class="center"> INPUT DATA ABOUT THE SUBJECT</legend>
+        
+    <label for="typeSub" id="subPropType">PROPERTY TYPE:</label>
+    <select id="typeSub" name="typeSub" oninput="subjectPropType()">
+           <option value="Single family - Detached">Single Family - DETACHED</option>
+           <option value="single family - Attached">Single Family - ATTACHED</option>
+           <option value="ranch">RANCH</option>
+           <option value="split level">SPLIT LEVEL</option>
+           <option value="two story">TWO STORY</option>
+           <option value="duplex">DUPLEX</option>
+           <option value="two unit">Two Unit</option>
+           <option value="three unit">Three Unit</option>
+           <option value="four unit">Four Unit</option>
+           <option value="manufactured">MANUFACTURED</option>
+    </select><br>
+        
+         <script>
+//compares the subject prop type to each of the comps and changes color if 
+//there is a difference in property type
+ function subjectPropType(){
+	var typeSale1 = document.getElementById("typeSale1").value;
+	var typeSale2 = document.getElementById("typeSale2").value;
+	var typeSale3 = document.getElementById("typeSale3").value;
+    var typeSub = document.getElementById("typeSub").value;
+	if (typeSub==typeSale1){
+          document.getElementById("propertyTypeSale1").style.color = "green";
+    }  else {
+            document.getElementById("propertyTypeSale1").style.color = "red";
+        }
+		  if (typeSub==typeSale2){
+          document.getElementById("propertyTypeSale2").style.color = "green";
+          }   else {
+                document.getElementById("propertyTypeSale2").style.color = "red";  
+              }
+			if (typeSub==typeSale3){
+          document.getElementById("propertyTypeSale3").style.color = "green";
+        } else {
+              document.getElementById("propertyTypeSale3").style.color = "red";
+	  } 
+ }
+ 
+ </script>
+          
+    <label for="extSub">EXTERIOR:</label>
+    <select id="extSub" name="exterior">
+           <option>BRICK</option>
+           <option>SIDING</option>
+           <option>MIXTURE OF BRICK AND SIDING</option>
+           <option>STUCCO</option>
+           <option>OTHER</option>
+    </select><br>
+           
+        <label for="sqftSub">SQFT:</label>
+        <input type="number" id="sqftSub" name="sqftSub" ><br>
+    
+    <label for="bedsSub">BEDS:</label>
+    <select id="bedsSub" name="bedsSub">
+          <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+    
+    <label for="bathsSub">BATHS:</label>
+    <select id="bathsSub" name="bathsSub">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+         
+    <label for="lotSize">LOT SIZE:</label>
+    <input type="number" id="subLotSz" name="lotSize" oninput="sale1Acreage()" oninput="sale2Acreage()">ACRES<br>
+    
+    <label for="yearSub">YEAR BUILT:</label>   
+    <input type="number" id="yearSub" name="year">
+        
+<button onclick="subYearFunction()">Try it</button>
+    <p id="demo"></p> 
+               
+    <label for="basement">IS THERE A BASEMENT?:</label>
+    <input type="checkbox" name="basement" value="basement" id="SubjectBasement"> <br>
+         
+    <label for="basementFinished">BASEMENT_FINISHED SQFT:</label>
+    <input type="number" id="basementFinished" name="basementFinished"> <br>
+         
+    <label for="basementUnFinished">BASEMENT_UN-FINISHED SQFT:</label>
+    <input type="number" id="basementUnFinished" name="basementUnFinished"> <br>
+            
+    <label for="bedsBasementSubject">BEDS IN BASEMENT:</label>
+    <select id="bedsBasementSubject" name="bedsBasementSubject">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+         
+    <label for="bedsBasementSubject">BATHS IN BASEMENT:</label>
+    <select id="bedsBasementSubject" name="bedsBasementSubject">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>        
+            
+    <label for="subPool">POOL?:</label>
+    <input type="checkbox" name="pool" value="pool" id="subPool">
+        
+    <label for="subWaterfront">WATERFRONT?:</label>
+    <input type="checkbox" name="waterfront" value="waterfront" id="subWaterfront">
+        
+    <label for="subWaterview">WATER VIEW?:</label>
+    <input type="checkbox" name="waterview" value="waterview" id="subWaterview">
+        
+    <label for="subGolfCourse"> GOLF COURSE VIEW?:</label>
+    <input type="checkbox" name="golfCourse" value="golfCourse" id="subGolfCourse"> <br>
+      
+</fieldset>
+   
+<fieldset class="border">
+                  
+ <legend class="center"> INPUT DATA ABOUT THE SALE #1</legend> <br>
+    <label for="sale1Price">SALE PRICE:</label>
+    <input type="number" id="sale1Price" name="sale1Price"><br>
+  
+    <label for="typeSale1" id="propertyTypeSale1">PROPERTY TYPE:</label>
+    <select id="typeSale1" name="typeSale1" oninput="sale1PropType()">
+           <option value="Single family - Detached">Single Family - DETACHED</option>
+           <option value="single family - Attached">Single Family - ATTACHED</option>
+           <option value="ranch">RANCH</option>
+           <option value="split level">SPLIT LEVEL</option>
+           <option value="two story">TWO STORY</option>
+           <option value="duplex">DUPLEX</option>
+           <option value="two unit">Two Unit</option>
+           <option value="three unit">Three Unit</option>
+           <option value="four unit">Four Unit</option>
+           <option value="manufactured">MANUFACTURED</option>
+             
+    </select><br>
+          
+    <label for="extSale1" id="exteriorSale1">EXTERIOR:</label>
+    <select id="extSale1" name="exterior" oninput="sale1Ext()">
+           <option>BRICK</option>
+           <option>SIDING</option>
+           <option>MIXTURE OF BRICK AND SIDING</option>
+           <option>STUCCO</option>
+           <option>OTHER</option>
+        </select><br>
+          
+    <label for="sqftSale1">SQFT:</label>
+    <input type="number" id="sqftSale1" name="sqftSub" oninput="sale1PricePerSqft()"><br>
+    
+    <input type="text" id="sale1PricePerSqft" placeholder="$0.00">
+         
+    <label for="sale1PricePerSqft">Per Square Foot</label><br>        
+          
+    <label for="bedsSale1">BEDS:</label>
+    <select id="bedsSale1" name="bedsSale1">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+    
+    <label for="bathsSale1">BATHS:</label>
+    <select id="bathsSale1" name="bathsSale1">
+          <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+         
+    <label for="sale1LotSz" id="sale1LotSize">LOT SIZE:</label>
+    <input type="number" id="sale1LotSz" name="sale1lotSz" oninput="sale1Acreage()">ACRES<br>
+        
+    <label for="yearSale1">YEAR BUILT:</label>   
+    <input type="number" id="yearSale1" name="year">
+        
+<button onclick="saleOneYearFunction()">Try it</button>
+    <p id="demo1"></p> 
+            
+    <label for="s1Basement" id="sale1Basement">IS THERE A BASEMENT?:</label>
+    <input type="checkbox" name="basement" value="basement" id="s1Basement" onclick=sale1Basement()> <br>
+        
+    <label for="basementFinished">BASEMENT_FINISHED SQFT:</label>
+    <input type="number" id="basementFinished" name="basementFinished"> <br>
+         
+    <label for="basementUnFinished">BASEMENT_UN-FINISHED SQFT:</label>
+    <input type="number" id="basementUnFinished" name="basementUnFinished"> <br>
+            
+    <label for="bedsBasementSale1">BEDS IN BASEMENT:</label>
+    <select id="bedsBasementSale1" name="bedsBasementSale1">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+         
+    <label for="bathsBasementSale1">BATHS IN BASEMENT:</label>
+    <select id="bathsBasementSale1" name="bathsBasementSale1">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+    
+    <label for="sale1Pool" id="poolSale1">POOL?:</label>
+    <input type="checkbox" name="pool" value="pool" id="sale1Pool" onclick="s1Pool()">
+    
+    <label for="sale1Waterfront" id="s1wf">WATERFRONT?:</label>
+    <input type="checkbox" name="waterfront" value="waterfront" id="sale1Waterfront" onclick="s1Wfront()">
+        
+    <label for="sale1Waterview" id="s1wv">WATER VIEW?:</label>
+    <input type="checkbox" name="waterview" value="waterview" id="sale1Waterview" onclick="s1Wview()">
+    
+    <label for="sale1GolfCourse" id="s1gc"> GOLF COURSE VIEW?:</label>
+    <input type="checkbox" name="golfCourse" value="golfCourse" id="sale1GolfCourse" onclick="s1Gcourse()"> <br>
+    
+</fieldset>
+   
+<fieldset class="border">
+ <legend class="center"> INPUT DATA ABOUT THE SALE #2</legend> <br>
+    <label for="sale2Price">SALE PRICE:</label>
+    <input type="number" id="sale2Price" name="sale2Price"><br>
+         
+     <label for="typeSale2" id="propertyTypeSale2">PROPERTY TYPE:</label>
+    <select id="typeSale2" name="typeSale2" oninput="sale2PropType()">
+           <option value="Single family - Detached">Single Family - DETACHED</option>
+           <option value="single family - Attached">Single Family - ATTACHED</option>
+           <option value="ranch">RANCH</option>
+           <option value="split level">SPLIT LEVEL</option>
+           <option value="two story">TWO STORY</option>
+           <option value="duplex">DUPLEX</option>
+           <option value="two unit">Two Unit</option>
+           <option value="three unit">Three Unit</option>
+           <option value="four unit">Four Unit</option>
+           <option value="manufactured">MANUFACTURED</option>
+               
+    </select><br>
+         
+    <label for="extSale2" id="exteriorSale2">EXTERIOR:</label>
+    <select id="extSale2" name="exterior" oninput="sale2Ext()">
+           <option>BRICK</option>
+           <option>SIDING</option>
+           <option>MIXTURE OF BRICK AND SIDING</option>
+           <option>STUCCO</option>
+           <option>OTHER</option>
+        </select><br>
+              
+    <label for="sqftSale2">SQFT:</label>
+    <input type="number" id="sqftSale2" name="sqftSub" oninput="sale2PricePerSqft()"><br>
+    
+    <input type="text" id="sale2PricePerSqft" placeholder="$0.00">
+    
+     <label for="sale2PricePerSqft">Per Square Foot</label><br>
+    
+    <label for="bedsSale2">BEDS:</label>
+    <select id="bedsSale2" name="bedsSale2">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+    
+    <label for="bathsSale2">BATHS:</label>
+    <select id="bathsSale2" name="bathsSale2">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+         
+    <label for="sale2LotSz" id="sale2LotSize">LOT SIZE:</label>
+    <input type="number" id="sale2LotSz" name="sale2lotSz" oninput="sale2Acreage()">ACRES<br>
+        
+    <label for="yearSale2">YEAR BUILT:</label>
+    <input type="number" id="yearSale2" name="yearBuilt"> 
+         
+    <button onclick="saleTwoYearFunction()">Try it</button>
+    <p id="demo2"></p> 
+          
+    <label for="s2Basement" id="sale2Basement">IS THERE A BASEMENT?:</label>
+    <input type="checkbox" name="basement" value="basement" id="s2Basement" onclick=sale2Basement()> <br>
+      
+    <label for="basementFinished">BASEMENT_FINISHED SQFT:</label>
+    <input type="number" id="basementFinished" name="basementFinished"> <br>
+         
+    <label for="basementUnFinished">BASEMENT_UN-FINISHED SQFT:</label>
+    <input type="number" id="basementUnFinished" name="basementUnFinished"> <br>
+            
+    <label for="bedsBasementSale2">BEDS IN BASEMENT:</label>
+    <select id="bedsBasementSale2" name="bedsBasementSale2">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+         
+    <label for="bedsBasementSale2">BATHS IN BASEMENT:</label>
+    <select id="bedsBasementSale2" name="bedsBasementSale2">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+        
+    <label for="sale2Pool" id="poolSale2">POOL?:</label>
+    <input type="checkbox" name="pool" value="pool" id="sale2Pool" onclick="s2Pool()">
+       
+     <label for="sale2Waterfront">WATERFRONT?:</label>
+    <input type="checkbox" name="waterfront" value="waterfront" id="sale2Waterfront">
+        
+    <label for="sale2Waterview">WATER VIEW?:</label>
+    <input type="checkbox" name="waterview" value="waterview" id="sale2Waterview">
+        
+    <label for="sale2GolfCourse"> GOLF COURSE VIEW?:</label>
+    <input type="checkbox" name="golfCourse" value="golfCourse" id="sale2GolfCourse"> <br>
+       
+             </fieldset>
+<fieldset class="border">
+ <legend class="center"> INPUT DATA ABOUT THE SALE #3</legend> <br> 
+    <label for="sale3Price">SALE PRICE:</label>
+    <input type="number" id="sale3Price" name="sale3Price"><br>
+        
+    <label for="typeSale3" id="propertyTypeSale3">PROPERTY TYPE:</label>
+    <select id="typeSale3" name="typeSale3" oninput="sale3PropType()">
+           <option value="Single family - Detached">Single Family - DETACHED</option>
+           <option value="single family - Attached">Single Family - ATTACHED</option>
+           <option value="ranch">RANCH</option>
+           <option value="split level">SPLIT LEVEL</option>
+           <option value="two story">TWO STORY</option>
+           <option value="duplex">DUPLEX</option>
+           <option value="two unit">Two Unit</option>
+           <option value="three unit">Three Unit</option>
+           <option value="four unit">Four Unit</option>
+           <option value="manufactured">MANUFACTURED</option>
+           
+    </select><br>
+        
+    <label for="extSale3" id="exteriorSale3">EXTERIOR:</label>
+    <select id="extSale3" name="exterior" oninput="sale3Ext()">
+           <option>BRICK</option>
+           <option>SIDING</option>
+           <option>MIXTURE OF BRICK AND SIDING</option>
+           <option>STUCCO</option>
+           <option>OTHER</option>
+        </select><br>
+        
+    <label for="sqftSale3">SQFT:</label>
+    <input type="number" id="sqftSale3" name="sqftSub" oninput="PricePerSqft()"><br>
+    
+    <input type="text" id="sale3PricePerSqft" placeholder="$0.00">
+     
+    <label for="sale3PricePerSqft">Per Square Foot</label><br>
+    
+    <label for="bedsSale3">BEDS:</label>
+    <select id="bedsSale3" name="bedsSale3">
+          <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+    
+    <label for="bathsSale3">BATHS:</label>
+    <select id="bathsSale3" name="bathsSale3">
+          <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+         
+    <label for="sale3LotSz" id="sale3LotSize">LOT SIZE:</label>
+    <input type="number" id="sale3LotSz" name="sale3lotSz" oninput="sale3Acreage()">ACRES<br>
+    
+    <label for="yearSale3">YEAR BUILT:</label>
+    <input type="number" id="yearSale3" name="yearBuilt"> 
+      
+    <button onclick="saleThreeYearFunction()">Try it</button>
+    <p id="demo3"></p> 
+            
+    <label for="s3Basement" id="sale3Basement">IS THERE A BASEMENT?:</label>
+    <input type="checkbox" name="basement" value="basement" id="s3Basement" onclick=sale3Basement()> <br>
+        
+    <label for="basementFinished">BASEMENT_FINISHED SQFT:</label>
+    <input type="number" id="basementFinished" name="basementFinished"> <br>
+         
+    <label for="basementUnFinished">BASEMENT_UN-FINISHED SQFT:</label>
+    <input type="number" id="basementUnFinished" name="basementUnFinished"> <br>
+            
+    <label for="bedsBasementSale3">BEDS IN BASEMENT:</label>
+    <select id="bedsBasementSale3" name="bedsBasementSale3">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select>
+         
+    <label for="bedsBasementSale3">BATHS IN BASEMENT:</label>
+    <select id="bedsBasementSale3" name="bedsBasementSale3">
+           <option>1</option>
+           <option>1.5</option>
+           <option>2</option>
+           <option>2.5</option>
+           <option>3</option>
+           <option>3.5</option>
+           <option>4</option>
+           <option>4.5</option>
+           <option>5</option>
+           <option>5.5</option>
+           <option>6</option>
+           <option>6.5</option>
+           <option>7</option>
+           <option>7.5</option>
+           <option>8</option>
+           <option>8.5</option>
+           <option>9</option>
+           <option>9.5</option>
+           <option>10</option>
+    </select><br>
+       
+     <label for="sale3Pool" id="poolSale3">POOL?:</label>
+    <input type="checkbox" name="pool" value="pool" id="sale3Pool" onclick="s3Pool()">
+       
+    <label for="sale3Waterfront">WATERFRONT?:</label>
+    <input type="checkbox" name="waterfront" value="waterfront" id="sale3Waterfront">
+        
+    <label for="sale3Waterview">WATER VIEW?:</label>
+    <input type="checkbox" name="waterview" value="waterview" id="sale3Waterview">
+        
+    <label for="sale3GolfCourse"> GOLF COURSE VIEW?:</label>
+    <input type="checkbox" name="golfCourse" value="golfCourse" id="sale3GolfCourse"> <br>
+     
+        </fieldset>
+     </body>
+</html>
